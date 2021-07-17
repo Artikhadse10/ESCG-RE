@@ -7,34 +7,65 @@
     <title>Certificate: Homepage</title>
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
     <style>
-        :root {
-  --dark-color: #212121;
+              html {
+  height:100%;
 }
 
 body {
-  font-family: Quando-Regular;
+  margin:0;
+   font-family: Quando-Regular;
   text-align: center;
   margin-top: 40px;
   font-size: 1.5em;
- background: linear-gradient(135deg, #fe2929, #ffb3c5);
- height: 95vh;
-}
-a{
-    color: #000033 !important;
-    text-decoration: none;
-  display: inline-block;
 }
 
-h4 {
-  font-weight: normal;
-  margin-bottom: 5px;
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
 }
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
 h1 {
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 40px;
-  font-size: 2em;
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
 
 img {
@@ -60,7 +91,6 @@ input {
   border-bottom: 1px solid black;
   text-transform: capitalize;
 }
-
 /* for styling the autocomplete style */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -112,24 +142,52 @@ input[type=text] {
     -webkit-text-fill-color: #fff !important;
   }
 }
+ /*button*/
 
+ .subbut {
+               display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 15px;
+
+            }
+ .subbut a {
+
+  background-color: rgba(219, 87, 51, 1);
+  color: rgba(255, 255, 255, 1);
+margin: -1000px -100px;
+  text-decoration: none;
+
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 9px 0 rgba(219, 31, 5, 1),0px 9px 25px rgba(0, 0, 0, .7);
+  width: 160px;
+  
+}
+a:active {
+  box-shadow: 0 3px 0 rgba(219, 31, 5, 1),0px 3px 6px rgba(0, 0, 0, .7);
+  position: relative;
+  top: 6px;
+}
     </style>
 </head>
 <body>
+  <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
     <header>
-        <img class="mb-3" src="EXAA.png" alt="Exam">
-        <h1>Examination System with Certification Generator</h1>
-        
+        <img class="mb-2" src="EXAA.png" alt="Exam">
+        <h1>Examination System with Certification Generator</h1>   
     </header>
     <main>
 
-        <label for="name">Type Your Name</label>
+        <label for="name">Type your name</label>
         <input required type="text" name="Name" autocomplete="name" placeholder="Enter your name" id="name" minlength="3"
             maxlength="20">
-        
-        <button id="submitBtn" type="button" >Get Certificate</button>
-
-
+              <div class="subbut">
+                  <button class="subbut mt-5" id="submitBtn" type="button" ><a href="">Get Certificate</a></button>
+               </div>
     </main>
     <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
     <script src="./FileSaver.js"></script>
