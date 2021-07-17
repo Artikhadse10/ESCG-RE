@@ -19,7 +19,7 @@
 body {
 background: linear-gradient(135deg, #fe2929, #ffb3c5);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+ 
   font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
@@ -35,7 +35,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
   width: 600px;
   overflow: hidden;
-
 }
 
 .quiz-header {
@@ -89,10 +88,6 @@ button:focus {
   outline: none;
   background-color: #5e3370;
 }
-.maiN{
-  margin-top: 100PX;
-  margin-bottom:100px ;
-}
 
     </style>
   </head>
@@ -107,9 +102,7 @@ button:focus {
         <title>Project</title>
       </head>
       <body>
-
-        <div class="maiN">
-          <div class="quiz-container" id="quiz">
+        <div class="quiz-container" id="quiz">
           <div class="quiz-header">
            
             <h2 id="question">Question text</h2>
@@ -138,8 +131,6 @@ button:focus {
           <button id="submit">Submit</button>
           
         </div>
-        </div>
-
         <script src="script.js"></script>
       </body>
     </html>
@@ -155,127 +146,127 @@ button:focus {
     const quizData = [
     {
         
-        question: "Artificial Intelligence is about_____.",
-        a: "Playing a game on Computer",
-        b: "Making a machine Intelligent",
-        c: "Programming on Machine with your Own Intelligence",
-        d: "Putting your intelligence in Machine",
+        question: "Who developed the Python language?",
+        a: "Zim Den",
+        b: "Guido van Rossum",
+        c: "Niene Stom",
+        d: "Wick van Rossum",
         correct: "b",
     },
     {
-        question: "Who is known as the -Father of AI?",
-        a: "Fisher Ada",
-        b: "Alan Turing",
-        c: "John McCarthy",
-        d: "Allen Newell",
+        question: "In which year was the Python language developed?",
+        a: "1995",
+        b: "1972",
+        c: "1981",
+        d: "1989",
+        correct: "d",
+    },
+    {
+        question: "Which one of the following is the correct extension of the Python file?",
+        a: ".py",
+        b: ".python",
+        c: ".p",
+        d: "None of these",
+        correct: "a",
+    },
+    {
+        question: "What do we use to define a block of code in Python language?",
+        a: "Key",
+        b: "Brackets",
+        c: "Indentation",
+        d: "None of these",
         correct: "c",
     },
-    {
-        question: "Select the most appropriate situation for that a blind search can be used.",
-        a: "Real-life situation",
-        b: "Small Search Space",
-        c: "Complex game",
-        d: "All of the above",
+     {
+        question: "Which character is used in Python to make a single line comment?",
+        a: "/",
+        b: "//",
+        c: "#",
+        d: "!",
+        correct: "c",
+    },
+     {
+        question: "What is the method inside the class in python language?",
+        a: "Object",
+        b: "Function",
+        c: "Attribute",
+        d: "Argument",
         correct: "b",
     },
-    {
-        question: "Among the given options, which search algorithm requires less memory?",
-        a: "Optimal Search",
-        b: "Depth First Search",
-        c: "Breadth-First Search",
-        d: "Linear Search",
-        correct: "b",
-    },
      {
-        question: " If a robot is able to change its own trajectory as per the external conditions, then the robot is considered as the__",
-        a: "Mobile",
-        b: "Non-Servo",
-        c: "Open Loop",
-        d: "Intelligent",
-        correct: "d",
-    },
-     {
-        question: "Which of the given language is not commonly used for AI?",
-        a: "LISP",
-        b: "PROLOG",
-        c: "Python",
-        d: "Perl",
-        correct: "d",
-    },
-     {
-        question: "The component of an Expert system is_________.",
-        a: "Knowledge Base",
-        b: "Inference Engine",
-        c: "User Interface",
-        d: "All of the above",
-        correct: "d",
-    },
-     {
-        question: " The maximum depth to which the alpha-beta pruning can be applied.",
-        a: "Any depth",
-        b: "Six states",
-        c: "Eight states",
-        d: "Ten states",
+        question: "Which of the following is not a keyword in Python language?",
+        a: "val",
+        b: "raise",
+        c: "try",
+        d: "with",
         correct: "a",
     },
      {
-        question: "Which of the following option is used to build complex sentences in knowledge representation?",
-        a: "Symbols",
-        b: "Connectives",
-        c: "Quantifier",
-        d: "None of the above",
+        question: " Which one of the following has the highest precedence in the expression?",
+        a: "Division",
+        b: "Subtraction",
+        c: "Power",
+        d: "Parentheses",
+        correct: "d",
+    },
+     {
+        question: " Which of the following functions is a built-in function in python language?",
+        a: "val()",
+        b: "print()",
+        c: "print()",
+        d: "None of these",
         correct: "b",
     },
      {
-        question: "A hybrid Bayesian Network consist_____.",
-        a: "Discrete variables only",
-        b: "Discontinuous Variable",
-        c: "Continuous Variable only",
-        d: "Both Discrete and Continuous variables",
-        correct: "d",
+        question: "What will be the output of this function?- all([2,4,0,6])  ",
+        a: "False",
+        b: "True",
+        c: "0",
+        d: "Invalid code",
+        correct: "a",
     },
       {
-        question: "Which process makes two different Logical expressions look identical?",
-        a: "Unification",
-        b: "Lifting",
-        c: "Inference Process",
-        d: "None of the above",
+        question: "Which of the following arithmetic operators cannot be used with strings in python? ",
+        a: "+",
+        b: "*",
+        c: "-",
+        d: "All of the above",
+        correct: "c",
+    },
+
+  {
+        question: "The output to execute string.ascii_letters can also be obtained from:?",
+        a: "character",
+        b: "ascii_lowercase_string.digits",
+        c: "lowercase_string.upercase",
+        d: "ascii_lowercase+string.ascii_upercase",
+        correct: "d",
+    },
+
+  {
+        question: "What error will occur when you execute the following code?  MANGO = APPLE  ",
+        a: "NameError",
+        b: "SyntaxError",
+        c: "TypeError",
+        d: "ValueError",
         correct: "a",
     },
 
   {
-        question: "Web Crawler is an example of______.",
-        a: "Intelligent Agent",
-        b: "Problem-solving agent",
-        c: "Simple reflex agent",
-        d: "Model-based agent",
+        question: "What happens when '2' == 2 is executed?",
+        a: "False",
+        b: "Ture",
+        c: "ValueError occurs",
+        d: "TypeError occurs",
         correct: "a",
     },
 
   {
-        question: " A knowledge-based agent can be defined with _____ levels.",
-        a: "None",
-        b: "2 Levels",
-        c: "3 Levels",
-        d: "4 Levels",
-        correct: "a",
-    },
-
-  {
-        question: "Ways to achieve AI in real-life are_________.",
-        a: "None",
-        b: "Machine Learning",
-        c: "Deep Learning",
-        d: "Both b & c",
-        correct: "a",
-    },
-
-  {
-        question: "The main tasks of an AI agent are_______.",
-        a: "Input and Output",
-        b: "Moment and Humanly Actions",
-        c: "Perceiving, thinking, and acting on the environment",
-        d: "None of the above",
+        question: "How many keywords present in the python programming language?",
+        a: "32",
+        b: "61",
+        c: "33",
+        d: "27",
         correct: "c",
     },
 
