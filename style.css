@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
 .header-blue {
     background: linear-gradient(135deg, #fe2929, #ffb3c5);
     background-color: #184e8e;
@@ -9,7 +11,7 @@
      background: linear-gradient(135deg, #fe2929, #ffb3c5);
     background-color: #184e8e;
 
-    font-family: 'Source Sans Pro', sans-serif
+   font-family: 'Poppins', sans-serif; 
 }
 
 .navbar-brand h1{
@@ -25,10 +27,11 @@
     font-size: 25px;
 }
 body{
+
      background: linear-gradient(135deg, #fe2929, #ffb3c5);
     background-color: #184e8e;
     padding-bottom: 80px;
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Poppins', sans-serif; 
 }
 @media (min-width:768px) {
     .header-blue {
@@ -107,6 +110,7 @@ body{
     font-size: 20px;
     margin-bottom: 30px;
     font-weight: 300
+    font-family: 'Poppins', sans-serif; 
 }
 
 .header-blue .phone-holder {
@@ -150,4 +154,41 @@ body{
     right: -60%;
     transform: rotate(-19deg);
     opacity: 0.2
+}
+
+ /*button*/
+
+ .subbut {
+               display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 15px;
+
+            }
+ .subbut a {
+
+  background-color: rgba(219, 87, 51, 1);
+  color: rgba(255, 255, 255, 1);
+margin: -1000px -100px;
+  text-decoration: none;
+
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 9px 0 rgba(219, 31, 5, 1),0px 9px 25px rgba(0, 0, 0, .7);
+  width: 160px;
+  
+}
+a:active {
+  box-shadow: 0 3px 0 rgba(219, 31, 5, 1),0px 3px 6px rgba(0, 0, 0, .7);
+  position: relative;
+  top: 6px;
+}
+
+/*Certification*/
+.h1{
+     font-family: 'Poppins', sans-serif; 
+}
+.fw-normal {
+    
+     font-size: 20px;
 }
