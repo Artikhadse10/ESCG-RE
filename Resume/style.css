@@ -1,0 +1,80 @@
+body{
+     background: linear-gradient(135deg, #fe2929, #ffb3c5); 
+}
+
+#cv-form{
+    
+}
+.myimg{
+    border: 1px solid gray;
+
+    width: 200px;
+}
+.background{
+  background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
+}
+
+#cv-template{
+    display: none;
+}
+.getResume{
+    color: #000;
+}
+.h3, h3 {
+    font-size:20px;
+    margin-top: 25px;
+}
+.btn-group-lg > .btn, .btn-lg {
+ margin-bottom: 50px;
+}
+
+.headingMain{
+    margin-top: -50px;
+}
+
+
+  
+  .getResume {
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    background-color: #16a085;
+    border: none;
+    color: #fff;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 4px;
+  }
+  
+  .getResume:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: #000;
+  }
+  
+
+
+  
+  .getPrint {
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    background-color: #16a085;
+    border: none;
+    color: #fff;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 4px;
+  }
+  
+  .getPrint:hover {
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: #000;
+  }
+  
+  
